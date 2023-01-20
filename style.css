@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    background-color: lightgrey;
+}
+#wrapper{
+    width: 100vw;
+    height: 100vh;  
+}
+.container{
+    height: 400px;
+    width: 600px;
+    background-color:white;
+    /* border: 1px s; */
+    box-shadow: 1px 1px 3px 0px lightgrey;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 30px 50px 30px 30px;
+    
+    border-radius: 30px;
+    gap: 40px;
+    margin-left: 30%;
+    margin-top: 10%;
+    
+    
+}
+.box{
+    margin-right: 30px;
+    margin-top: 10px;
+}
+#cup{
+    grid-row-start: 1;
+    grid-row-end: 7;
+    
+    height: 100%;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-top-left-radius:30px;
+    border-bottom-left-radius: 30px;
+    
+}
+
+#title, #description, #lessprice, #btn{
+font-family: "Montserrat", sans-serif;
+color:gray;
+
+font-weight: 500;
+
+}
+#title{
+    letter-spacing: 0.2em;
+    margin-top: 30px;
+}
+#heading, #price{
+    font-family: "Fraunces", serif;
+    
+}
+#price{
+
+    color:  rgb(49, 90, 49);
+    font-weight: 500;
+    font-size: 32px;
+    opacity:0.9;
+
+}
+#btn{
+    background-color: rgb(49, 90, 49);
+    color: white;
+    border-radius: 7px;
+    border: 0px;
+    height: 3em;
+    opacity:0.8;
+    
+}
+#btn:hover{
+    opacity: 1;
+    cursor:pointer
+}
+#btn img{
+    height: 12px;
+}
+#lessprice{
+    font-size: small;
+    font-weight: 500;    
+}
